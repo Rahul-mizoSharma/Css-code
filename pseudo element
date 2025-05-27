@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after{
+            content:"stands for hyper-text markup language"
+        }
+        h1::before{
+            content:"The"
+        }
+        h1::first-letter{
+            color:brown;
+        }
+        h1::first-line{
+            background-color: darkkhaki;
+        }
+        li::marker{
+            color: blue;
+        }
+        h1::selection{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1> HTML </h1>
+    <ol>
+        <li>Puma </li>
+        <li>Nike </li>
+        <li>Adidas</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .galaxy{
+            height:100vh;
+            width:100em;
+            border: 2px solid red;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-size: cover;
+            background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMDktYWRqLTA5LWcuanBn.jpg");
+
+        }
+        .sun{
+            height:200px;
+            width:200px;
+            /* border:2px solid black; */
+            /* background-color: orange; */
+            /* border-radius: 50%; */
+            position:fixed;
+            /* box-shadow: 0px 0px 20px yellow; */
+            background-size: cover;
+            background-image: url("https://purepng.com/public/uploads/large/3150635235038sltjl2scjqyrycktmiru9x5yqax1kqjk3ywzmmifjhtzysjribji2pmd7mg7hiss0noxqs8npk8fj0cwis0zw2lxv679l8l9yy.png");
+        }
+        .circle{
+            height:500px;
+            width:500px;
+            border:2px solid white;
+            border-radius: 50%;
+            /* border-style: none; */
+            animation-name: rotating;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotating{
+            from{
+                 transform: rotate(0deg);   
+            }
+            to{
+                transform: rotate(360deg);
+            }  
+        }
+        .mercury{
+            height:130px;
+            width: 130px;
+            border: 2px solid white;
+            background-color: grey;
+            border-radius: 50%;
+            background-size: cover;
+            background-image: url("https://icon2.cleanpng.com/20180504/pjw/avsueuzo9.webp");
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy">
+        <div class="sun"> 
+            <div class="circle2">
+            </div>
+        </div>
+    
+        <div class="circle">
+                <div class="mercury"></div>
+        </div>
+    </div>
+</body>
+</html>
